@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OB Beer</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./full-page-js/fullpage.min.css"> <!--fullPage css-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    /> <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--AOS CSS-->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"> //제이쿼리
+    </script>
+    <script src="./full-page-js/fullpage.min.js"></script> <!--fullPage js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> <!--swiper js-->
+</head>
+<body>
+    <header>
+        <div class="nav-category"></div>
+        <nav>
+            <div class="logo-box">
+                <a href="#"><img src="./imgs/nav/ob-logo-none-hover.png" alt="" class="logo"></a>
+            </div>
+            <ul>
+                <li class="nav-list">
+                    <a href="#" class="nav-link">회사 소개</a>
+                    <ul class="nav-depth">
+                        <li>
+                            <a href="">오비맥주 회사 소개</a>
+                        </li>
+                        <li>
+                            <a href="">오비맥주 연혁</a>
+                        </li>
+                        <li>
+                            <a href="">AB인베브 소개</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-link">브랜드</a>
+                    <ul class="nav-depth">
+                        <li>
+                            <a href="">카스 Fresh</a>
+                        </li>
+                        <li>
+                            <a href="">한맥</a>
+                        </li>
+                        <li>
+                            <a href="">FILGOOD</a>
+                        </li>
+                        <li>
+                            <a href="">버드와이저</a>
+                        </li>
+                        <li>
+                            <a href="">호가든</a>
+                        </li>
+                        <li>
+                            <a href="">Stella Artois</a>
+                        </li>
+                        <li>
+                            <a href="">Corona</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-link">ESG</a>
+                    <ul class="nav-depth">
+                        <li>
+                            <a href="">ESG</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-link">NEWS</a>
+                    <ul class="nav-depth">
+                        <li>
+                            <a href="">오비 소식</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <main id="full-page">
+        <section class="section main-visual">
+            <h2 class="section-name">Section 0</h2>
+            <div class="swiper" id="main-silder">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide main-visual-slide" id="main-visual-slider-img01">
+                        <div class="main-visual-text">
+                            <h2 class="main-visual-tt">SINCE 1933</h2>
+                            <p class="main-visual-desc">
+                                오비맥주는 1933년 태동해 지난 90여년간 한국 주류산업을 이끌어 온 대한민국 대표 
+                                ‘맥주 전문기업’ 입니다.
+                            </p>
+                            <a href="#" class="main-visual-link">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-visual-slide" id="main-visual-slider-img02">
+                        <div class="main-visual-text">
+                            <h2 class="main-visual-tt">Korea's leading<br>beer company</h2>
+                            <p class="main-visual-desc">
+                                오비맥주는 국내 맥주 수출 1위이며 한국 맥주 세계화에도 앞장서고 있습니다.
+                            </p>
+                            <a href="#" class="main-visual-link">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-visual-slide" id="main-visual-slider-img03">
+                        <div class="main-visual-text">
+                            <h2 class="main-visual-tt">Better future</h2>
+                            <p class="main-visual-desc">
+                                오비맥주는 현재에 안주하지 않고 더 나은 브랜드 경험을 위해 노력합니다.
+                            </p>
+                            <a href="#" class="main-visual-link">VIEW MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination" id="main-pagination"></div>
+            </div>
+        </section>
+        <section class="section brand">
+            <h2 class="section-name">brand</h2>
+            <div class="swiper" id="brand-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide brand-slide cass-slide">
+                        <div class="brand-wrapper">
+                            <div class="brand-img-box">
+                                <img src="./imgs/brand/brand-cass.png" alt="" class="brand-img" id="cass">
+                            </div>
+                            <div class="brand-text">
+                                <div class="brand-tt">CASS Fresh</div>
+                                <div class="brand-desc-box">
+                                    <p class="brand-desc">1994년 출시한 오비맥주 대표 맥주 ‘카스’는 끊임없는 혁신과 탁월한 제품력으로 한국 맥주 시장에서 선도적 지위를 유지하고 있습니다.</p>
+                                    <span class="alcohol">도수 : 4.5%</span>
+                                    <span class="type">종류 : Lager (라거)</span>
+                                </div>
+                                <div class="brand-site-btn">
+                                    <a href="#" class="brand-site" id="cass-site">Web Site</a>
+                                    <div class="brand-btn-box">
+                                        <div class="swiper-button-prev" id="brand-prev-btn"></div>
+                                        <div class="swiper-button-next" id="brand-next-btn"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide brand-slide hanmac-slide">
+                        <div class="brand-wrapper">
+                            <div class="brand-img-box">
+                                <img src="./imgs/brand/brand-hanmac.png" alt="" class="brand-img" id="cass">
+                            </div>
+                            <div class="brand-text">
+                                <div class="brand-tt">HANMAC</div>
+                                <div class="brand-desc-box">
+                                    <p class="brand-desc">100% 고품질 국내산 쌀을 첨가하여 한맥만의 상쾌한 풍미를완성시켰으며, 자랑스러운 우리의 ‘K-라거’로써 ‘대한민국 대표라거프로젝트’를 완성해 줄 것으로 기대합니다.</p>
+                                    <span class="alcohol">도수 :  4.6%</span>
+                                    <span class="type">종류 : Lager (라거)</span>
+                                </div>
+                                <div class="brand-site-btn">
+                                    <a href="#" class="brand-site" id="cass-site">Web Site</a>
+                                    <div class="brand-btn-box">
+                                        <div class="swiper-button-prev" id="brand-prev-btn"></div>
+                                        <div class="swiper-button-next" id="brand-next-btn"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide brand-slide stella-slide">
+                        <div class="brand-wrapper">
+                            <div class="brand-img-box">
+                                <img src="./imgs/brand/brand-stella.png" alt="" class="brand-img" id="cass">
+                            </div>
+                            <div class="brand-text">
+                                <div class="brand-tt">STELLA</div>
+                                <div class="brand-desc-box">
+                                    <p class="brand-desc">벨기에를 대표하는 프리미엄 맥주로 체코산 노블 사츠홉을 사용하여 기분 좋은 쌉쌀한 맛과 청량한 끝 맛을 선사하며, 모든 요리와 환상적인 조화를 이룹니다.</p>
+                                    <span class="alcohol">도수 : 5.0%</span>
+                                    <span class="type">종류 : Pilsner Lager (필스너 라거)</span>
+                                </div>
+                                <div class="brand-site-btn">
+                                    <a href="#" class="brand-site" id="cass-site">Web Site</a>
+                                    <div class="brand-btn-box">
+                                        <div class="swiper-button-prev" id="brand-prev-btn"></div>
+                                        <div class="swiper-button-next" id="brand-next-btn"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-slide brand-slide budweiser-slide">
+                        <div class="brand-wrapper">
+                            <div class="brand-img-box">
+                                <img src="./imgs/brand/brand-budweiser.png" alt="" class="brand-img" id="cass">
+                            </div>
+                            <div class="brand-text">
+                                <div class="brand-tt">BUDWEISER</div>
+                                <div class="brand-desc-box">
+                                    <p class="brand-desc">버드와이저는 단일 브랜드 판매량 세계 1위의 아메리칸 스타일의 프리미엄 맥주로, 비치우드 숙성공법을 사용하여 깨끗하고 부드러운 맛이 특징입니다.</p>
+                                    <span class="alcohol">도수 : 5.0%</span>
+                                    <span class="type">종류 : Lager (라거)</span>
+                                </div>
+                                <div class="brand-site-btn">
+                                    <a href="#" class="brand-site" id="cass-site">Web Site</a>
+                                    <div class="brand-btn-box">
+                                        <div class="swiper-button-prev" id="brand-prev-btn"></div>
+                                        <div class="swiper-button-next" id="brand-next-btn"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide brand-slide filgood-slide">
+                        <div class="brand-wrapper">
+                            <div class="brand-img-box">
+                                <img src="./imgs/brand/brand-filgood.png" alt="" class="brand-img" id="cass">
+                            </div>
+                            <div class="brand-text">
+                                <div class="brand-tt">FIL GOOD</div>
+                                <div class="brand-desc-box">
+                                    <p class="brand-desc">필굿은 시원하고 상쾌한 아로마 홉과 감미로운 크리스탈 몰트를사용해 맛의 품격과 깊이를 더한 하이퀄리티 발포주입니다.</p>
+                                    <span class="alcohol">도수 : 4.5% & 7.0%</span>
+                                    <span class="type">종류 : 기타 주류</span>
+                                </div>
+                                <div class="brand-site-btn">
+                                    <a href="#" class="brand-site" id="cass-site">Web Site</a>
+                                    <div class="brand-btn-box">
+                                        <div class="swiper-button-prev" id="brand-prev-btn"></div>
+                                        <div class="swiper-button-next" id="brand-next-btn"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide brand-slide hoegaarden-slide">
+                        <div class="brand-wrapper">
+                            <div class="brand-img-box">
+                                <img src="./imgs/brand/brand-hoegaarden.png" alt="" class="brand-img" id="cass">
+                            </div>
+                            <div class="brand-text">
+                                <div class="brand-tt">HOEGAARDEN</div>
+                                <div class="brand-desc-box">
+                                    <p class="brand-desc">호가든은 독일의 ‘맥주순수령’과는 달리 약초, 허브, 과일 등을 사용해 다양한 맛의 맥주를 개발한 벨기에 사람들의 창의성과 오랜 정통 기법의 만남으로 탄생한 맥주입니다.</p>
+                                    <span class="alcohol">도수 : 4.9%, (생맥주 4.8%)</span>
+                                    <span class="type">종류 : Belgian White Ale (밀맥주)</span>
+                                </div>
+                                <div class="brand-site-btn">
+                                    <a href="#" class="brand-site" id="cass-site">Web Site</a>
+                                    <div class="brand-btn-box">
+                                        <div class="swiper-button-prev" id="brand-prev-btn"></div>
+                                        <div class="swiper-button-next" id="brand-next-btn"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar" id="brand-scrollbar"></div>
+              </div>
+        </section>
+        <section class="section company">
+            <h2 class="section-name">ESG, GMT</h2>
+            <div class="header-height-box"></div>
+            <div class="company-resolution">
+                <div class="esg">
+                    <h3 class="sub-section-name">ESG</h3>
+                    <p class="sub-section-desc">오비맥주는 환경경영, 사회적 책임경영, 준법·투명 경영을적극 실천하며 기업과 사회가 공존하는 지속가능한 미래를만들기 위해 노력하고 있습니다.</p>
+                    <a href="#" class="sub-section-link">VIEW MORE</a>
+                </div>
+                <div class="gmt">
+                    <h3 class="sub-section-name">GMT</h3>
+                    <p class="sub-section-desc">우리는 훌륭한 예비 리더를 성장시키는 것의 중요성을 알고 있습니다. Global Management Trainee Program은 글로벌 핵심 인력으로 성장할 인재를 선발하여 빠른 기간 내에 임원으로 성장시키는 것을 목표로 하는 Fast Track 입니다.</p>
+                    <a href="#" class="sub-section-link">VIEW MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="section news">
+            <div class="news-contents">
+                <div class="news-title-background">
+                    <h2 class="section-name" id="news-section">NEWS</h2>
+                </div>
+                <div class="news-container">
+                    <div class="swiper" id="news-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper" id="news-wrapper">
+                          <!-- Slides -->
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div href="" class="news-text">
+                                    <p class="news-date">2023-08-04</p>
+                                    <h3 class="news-tt">오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료</h3>
+                                    <p class="news-desc">“버려지는 폐기물에 새로운 가치를 더하다”오비맥주, 맥주 소재 업사이클링 패션쇼·전시 성료- 18일 동대문 DDP패션몰서</p>
+                                    <a href="#" class="news-link">VIEW MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev news-btn" id="news-prev-btn"></div>
+                    <div class="swiper-button-next news-btn" id="news-next-btn"></div>
+                </div>
+            </div>
+            
+            
+        </section>
+        <footer class="section footer fp-auto-height-responsive fp-auto-height">
+            <div class="footer-contents">
+                <div class="footer-logo-box">
+                    <img src="./imgs/nav/ob-logo-none-hover.png" alt="" class="footer-logo">
+                </div>
+                <div class="footer-text">
+                    <ul class="footer-top">
+                        <li><a href="#">개인정보 취급방침</a></li>
+                        <li><a href="#">이메일 무단수집거부</a></li>
+                        <li><a href="#" class="customer">고객센터</a></li>
+                    </ul>
+                    <ul class="footer-address">
+                        <li><a href="#" class="address-link">서울 강남구 영동대로 517 아셈타워 8층</a></li>
+                        <li><a href="#">Copyright ⓒ Oriental Brewery Co. All rights reserved.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--aos js-->
+    <script src="./js/swiper.js"></script> <!--swiper js-->
+    <script src="./js/script.js"></script>
+</body>
+</html>
